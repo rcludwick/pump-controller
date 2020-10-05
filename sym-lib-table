@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name wemos-mini-d1)(type Legacy)(uri ${KIPRJMOD}/d1_mini_kicad/library/wemos_mini.lib)(options "")(descr wemos-d1))
+  (lib (name pump-controller)(type Legacy)(uri ${KIPRJMOD}/project.lib)(options "")(descr "project level libraries"))
+  (lib (name VNP507)(type Legacy)(uri ${KIPRJMOD}/VNP507.lib)(options "")(descr "VNP5N07 mosfet replacement"))
+)
