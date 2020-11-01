@@ -186,8 +186,6 @@ SIGNAL_GND
 Text GLabel 1250 6200 0    50   Input ~ 0
 +5V
 Wire Wire Line
-	1250 6200 2050 6200
-Wire Wire Line
 	1250 6300 2050 6300
 Wire Wire Line
 	1250 6400 2050 6400
@@ -1099,4 +1097,6 @@ Wire Wire Line
 	8950 5700 9400 5700
 Text Label 9100 5700 0    50   ~ 0
 MOS_IN
+Wire Wire Line
+	1250 6200 2050 6200
 $EndSCHEMATC

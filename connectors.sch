@@ -139,34 +139,21 @@ Wire Wire Line
 	3650 1700 3650 2250
 Wire Wire Line
 	3600 1600 3600 2150
-$Comp
-L Connector:Screw_Terminal_01x04 J?
-U 1 1 5F144F9B
-P 3450 3450
-AR Path="/5F144F9B" Ref="J?"  Part="1" 
-AR Path="/5F09CC66/5F144F9B" Ref="J2"  Part="1" 
-F 0 "J2" H 3368 3767 50  0000 C CNN
-F 1 "Power Terminal" H 3368 3676 50  0000 C CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-404_1x04_P5.00mm_45Degree" H 3450 3450 50  0001 C CNN
-F 3 "~" H 3450 3450 50  0001 C CNN
-	1    3450 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 3650 2600 3650
-Wire Wire Line
-	3250 3550 2600 3550
-Text GLabel 2600 3350 0    50   Input ~ 0
-+5V
-Text GLabel 2600 3450 0    50   Input ~ 0
-SIGNAL_GND
-Wire Wire Line
-	3250 3450 2600 3450
 Wire Wire Line
 	3250 3350 2600 3350
-Text GLabel 2600 3650 0    50   Input ~ 0
+Wire Wire Line
+	3250 3250 2600 3250
+Text GLabel 2600 3050 0    50   Input ~ 0
++5V
+Text GLabel 2600 3150 0    50   Input ~ 0
+SIGNAL_GND
+Wire Wire Line
+	3250 3150 2600 3150
+Wire Wire Line
+	3250 3050 2600 3050
+Text GLabel 2600 3350 0    50   Input ~ 0
 MOTOR_PWR
-Text GLabel 2600 3550 0    50   Input ~ 0
+Text GLabel 2600 3250 0    50   Input ~ 0
 MOTOR_GND
 Text GLabel 2200 4900 0    50   Input ~ 0
 MOTOR+
@@ -182,7 +169,7 @@ AR Path="/5F15870D" Ref="J?"  Part="1"
 AR Path="/5F09CC66/5F15870D" Ref="J1"  Part="1" 
 F 0 "J1" H 2950 5300 50  0000 R CNN
 F 1 "Button Terminal" V 3000 5250 50  0000 R CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-406_1x06_P5.00mm_45Degree" H 2900 4900 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-6-5.08_1x06_P5.08mm_Horizontal" H 2900 4900 50  0001 C CNN
 F 3 "~" H 2900 4900 50  0001 C CNN
 	1    2900 4900
 	1    0    0    -1  
@@ -402,7 +389,7 @@ AR Path="/5F219190" Ref="J?"  Part="1"
 AR Path="/5F09CC66/5F219190" Ref="J4"  Part="1" 
 F 0 "J4" H 8680 4742 50  0000 L CNN
 F 1 "Motor Connector" H 7850 4900 50  0000 L CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-402_1x02_P5.00mm_45Degree" H 8600 4750 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 8600 4750 50  0001 C CNN
 F 3 "~" H 8600 4750 50  0001 C CNN
 	1    8600 4750
 	1    0    0    1   
@@ -415,4 +402,46 @@ Wire Wire Line
 	2500 4350 3100 4350
 Text GLabel 6100 1600 2    50   Output ~ 0
 SENSOR_OUT
+$Comp
+L Connector:Screw_Terminal_01x04 J?
+U 1 1 5F983A88
+P 2250 3850
+AR Path="/5F983A88" Ref="J?"  Part="1" 
+AR Path="/5F09CC66/5F983A88" Ref="J8"  Part="1" 
+F 0 "J8" H 2168 4167 50  0000 C CNN
+F 1 "Power In Terminal" H 2168 4076 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal" H 2250 3850 50  0001 C CNN
+F 3 "~" H 2250 3850 50  0001 C CNN
+	1    2250 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4050 3100 4050
+Wire Wire Line
+	2450 3950 3100 3950
+Text GLabel 3100 3750 2    50   Output ~ 0
++5VIN
+Text GLabel 3100 3850 2    50   Output ~ 0
+SIGNAL_GND
+Wire Wire Line
+	2450 3850 3100 3850
+Wire Wire Line
+	2450 3750 3100 3750
+Text GLabel 3100 4050 2    50   Output ~ 0
+MOTOR_PWR
+Text GLabel 3100 3950 2    50   Output ~ 0
+MOTOR_GND
+$Comp
+L Connector:Screw_Terminal_01x04 J?
+U 1 1 5F144F9B
+P 3450 3150
+AR Path="/5F144F9B" Ref="J?"  Part="1" 
+AR Path="/5F09CC66/5F144F9B" Ref="J2"  Part="1" 
+F 0 "J2" H 3368 3467 50  0000 C CNN
+F 1 "Power Out Terminal" H 3368 3376 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal" H 3450 3150 50  0001 C CNN
+F 3 "~" H 3450 3150 50  0001 C CNN
+	1    3450 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

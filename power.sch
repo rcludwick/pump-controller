@@ -89,7 +89,7 @@ $EndComp
 Text GLabel 2650 1950 3    50   Input ~ 0
 +3V3
 Text GLabel 1850 4500 1    50   Input ~ 0
-+5V
++5VIN
 $Comp
 L Device:CP1 C?
 U 1 1 5F088E7C
@@ -152,40 +152,8 @@ Wire Wire Line
 	2300 4900 2300 4950
 Text GLabel 2300 4500 1    50   Input ~ 0
 +3V3
-$Comp
-L Device:CP1 C?
-U 1 1 5F088E99
-P 4250 3400
-AR Path="/5F088E99" Ref="C?"  Part="1" 
-AR Path="/5F06209C/5F088E99" Ref="C3"  Part="1" 
-F 0 "C3" H 4250 3300 50  0000 L CNN
-F 1 "1000uF" V 4400 3350 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 4250 3400 50  0001 C CNN
-F 3 "~" H 4250 3400 50  0001 C CNN
-	1    4250 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 3150 4250 3250
-Text GLabel 4250 3150 1    50   Input ~ 0
-MOTOR_PWR
-$Comp
-L power:GNDA #PWR?
-U 1 1 5F088EA1
-P 4250 3600
-AR Path="/5F088EA1" Ref="#PWR?"  Part="1" 
-AR Path="/5F06209C/5F088EA1" Ref="#PWR019"  Part="1" 
-F 0 "#PWR019" H 4250 3350 50  0001 C CNN
-F 1 "GNDA" H 4255 3427 50  0000 C CNN
-F 2 "" H 4250 3600 50  0001 C CNN
-F 3 "" H 4250 3600 50  0001 C CNN
-	1    4250 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 3550 4250 3600
 Text GLabel 1850 5500 1    50   Input ~ 0
-+5V
++5VIN
 $Comp
 L Device:CP1 C?
 U 1 1 5F088EA9
@@ -248,38 +216,6 @@ Wire Wire Line
 	2300 5900 2300 5950
 Text GLabel 2300 5500 1    50   Input ~ 0
 +3V3
-$Comp
-L Device:CP1 C?
-U 1 1 5F088EC6
-P 4650 3400
-AR Path="/5F088EC6" Ref="C?"  Part="1" 
-AR Path="/5F06209C/5F088EC6" Ref="C8"  Part="1" 
-F 0 "C8" H 4650 3300 50  0000 L CNN
-F 1 "1000uF" V 4765 3355 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 4650 3400 50  0001 C CNN
-F 3 "~" H 4650 3400 50  0001 C CNN
-	1    4650 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 3150 4650 3250
-Text GLabel 4650 3150 1    50   Input ~ 0
-MOTOR_PWR
-$Comp
-L power:GNDA #PWR?
-U 1 1 5F088ECE
-P 4650 3600
-AR Path="/5F088ECE" Ref="#PWR?"  Part="1" 
-AR Path="/5F06209C/5F088ECE" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 4650 3350 50  0001 C CNN
-F 1 "GNDA" H 4655 3427 50  0000 C CNN
-F 2 "" H 4650 3600 50  0001 C CNN
-F 3 "" H 4650 3600 50  0001 C CNN
-	1    4650 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 3550 4650 3600
 $Comp
 L Device:CP1 C?
 U 1 1 5F088ED5
@@ -427,4 +363,27 @@ Wire Wire Line
 	1900 1850 1900 1950
 Wire Wire Line
 	2650 1850 2650 1950
+Text GLabel 1450 1150 0    50   Input ~ 0
++5VIN
+Text GLabel 2450 1150 2    50   Output ~ 0
++5V
+$Comp
+L Device:D_Schottky D17
+U 1 1 5F98B19A
+P 1850 1150
+F 0 "D17" H 1850 933 50  0000 C CNN
+F 1 "D_Schottky" H 1850 1024 50  0000 C CNN
+F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 1850 1150 50  0001 C CNN
+F 3 "~" H 1850 1150 50  0001 C CNN
+	1    1850 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 1150 1700 1150
+Wire Wire Line
+	2000 1150 2450 1150
+Text Notes 1200 850  0    50   ~ 0
++5VIN comes from the power supply\nThe WEMOS D1 has a schottky diode protecting it's 5V supply.
+Text Notes 1300 4000 0    50   ~ 0
+The caps on +5VIN must be behind th shottky diode\nsince USB has a limit on the inrush current
 $EndSCHEMATC
