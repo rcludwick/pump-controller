@@ -196,7 +196,7 @@ NoConn ~ 2050 6900
 Wire Wire Line
 	3050 6400 3300 6400
 Text GLabel 3300 6400 2    50   Output ~ 0
-PUMP_IND
+DEBUG
 $Comp
 L Device:LED D9
 U 1 1 5EA1AA0B
@@ -344,7 +344,7 @@ U 1 1 5E6ED67B
 P 2550 6550
 F 0 "U1" H 2550 7050 60  0000 C CNN
 F 1 "WeMos_mini" H 2550 6050 60  0000 C CNN
-F 2 "Module:WEMOS_D1_mini_light" H 3100 5850 60  0001 C CNN
+F 2 "pump-controller:D1_mini_board" H 3100 5850 60  0001 C CNN
 F 3 "http://www.wemos.cc/Products/d1_mini.html" H 2550 5900 60  0000 C CNN
 	1    2550 6550
 	1    0    0    -1  
@@ -562,7 +562,7 @@ F 3 "" H 5550 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4300 1750 0    50   Input ~ 0
-PUMP_IND
+DEBUG
 Wire Wire Line
 	4850 1750 4950 1750
 $Comp

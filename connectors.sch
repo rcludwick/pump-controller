@@ -169,7 +169,7 @@ AR Path="/5F15870D" Ref="J?"  Part="1"
 AR Path="/5F09CC66/5F15870D" Ref="J1"  Part="1" 
 F 0 "J1" H 2950 5300 50  0000 R CNN
 F 1 "Button Terminal" V 3000 5250 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-6-5.08_1x06_P5.08mm_Horizontal" H 2900 4900 50  0001 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_6-G-5,08_1x06_P5.08mm_Vertical" H 2900 4900 50  0001 C CNN
 F 3 "~" H 2900 4900 50  0001 C CNN
 	1    2900 4900
 	1    0    0    -1  
@@ -230,7 +230,7 @@ MOTOR_ON
 Text GLabel 7850 3400 0    50   Input ~ 0
 PUMP_USER_SIG
 Text GLabel 7850 3500 0    50   Input ~ 0
-PUMP_IND
+DEBUG
 Text GLabel 7850 3600 0    50   Input ~ 0
 WATER_PRESENT
 Text GLabel 7850 3700 0    50   Input ~ 0
@@ -389,7 +389,7 @@ AR Path="/5F219190" Ref="J?"  Part="1"
 AR Path="/5F09CC66/5F219190" Ref="J4"  Part="1" 
 F 0 "J4" H 8680 4742 50  0000 L CNN
 F 1 "Motor Connector" H 7850 4900 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 8600 4750 50  0001 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G-5,08_1x02_P5.08mm_Vertical" H 8600 4750 50  0001 C CNN
 F 3 "~" H 8600 4750 50  0001 C CNN
 	1    8600 4750
 	1    0    0    1   
@@ -410,7 +410,7 @@ AR Path="/5F983A88" Ref="J?"  Part="1"
 AR Path="/5F09CC66/5F983A88" Ref="J8"  Part="1" 
 F 0 "J8" H 2168 4167 50  0000 C CNN
 F 1 "Power In Terminal" H 2168 4076 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal" H 2250 3850 50  0001 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_4-G-5,08_1x04_P5.08mm_Vertical" H 2250 3850 50  0001 C CNN
 F 3 "~" H 2250 3850 50  0001 C CNN
 	1    2250 3850
 	-1   0    0    -1  
@@ -439,7 +439,7 @@ AR Path="/5F144F9B" Ref="J?"  Part="1"
 AR Path="/5F09CC66/5F144F9B" Ref="J2"  Part="1" 
 F 0 "J2" H 3368 3467 50  0000 C CNN
 F 1 "Power Out Terminal" H 3368 3376 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal" H 3450 3150 50  0001 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_4-G-5,08_1x04_P5.08mm_Vertical" H 3450 3150 50  0001 C CNN
 F 3 "~" H 3450 3150 50  0001 C CNN
 	1    3450 3150
 	1    0    0    -1  
